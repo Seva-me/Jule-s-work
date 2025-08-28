@@ -1,0 +1,30 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run migrate && node index.js",
+    "test": "jest --rootDir . --passWithNoTests",
+    "migrate": "node src/scripts/run-migrations.js"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.16.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.7",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "jest": "^30.1.1",
+    "sequelize-cli": "^6.6.3",
+    "sqlite3": "^5.1.7",
+    "supertest": "^7.1.4",
+    "umzug": "^2.3.0"
+  }
+}
