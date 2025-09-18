@@ -7,5 +7,4 @@ const authRouter = require('./src/controller/userindex');
 
 app.use('/api/auth', authRouter);
 
-
 module.exports = app;
